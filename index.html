@@ -18,6 +18,9 @@
         <div class="container-fluid bg">
             <div class="row">
                 <div class="col-md-12">
+                    <p class="close-btn">&#x274C;</p>
+                </div>
+                <div class="col-md-12">
                     <div class="logo">
                         <img src="images/logo.png" alt="logo" class="img">
                     </div>
@@ -28,17 +31,17 @@
                             <div class="contact-us-form-holder">
                                 <p class="heading">Create Your Free Account</p>
                                 <div class="contact-us-accounts">
-                                    <a class="contact-us-social-media-buttons text" href="/social-auth/login/google-oauth2/?next=">
+                                    <a class="contact-us-social-media-buttons" href="/social-auth/login/google-oauth2/?next=">
                                         <img class="social-icons" src="images/google.svg" alt="socail">
-                                        <p class="text">Google</p>
+                                        <p class="icons-text">Google</p>
                                     </a>
-                                    <a class="contact-us-social-media-buttons text" href="/social-auth/login/facebook/?next=">
+                                    <a class="contact-us-social-media-buttons" href="/social-auth/login/facebook/?next=">
                                         <img class="social-icons" src="images/facebook.svg" alt="socail">
-                                        <p class="text">Facebook</p>
+                                        <p class="icons-text">Facebook</p>
                                     </a>
-                                    <a class="contact-us-social-media-buttons text" href="/social-auth/login/linkedin-oauth2/?next=">
+                                    <a class="contact-us-social-media-buttons" href="/social-auth/login/linkedin-oauth2/?next=">
                                         <img class="social-icons" src="images/linkedin.svg" alt="socail">
-                                        <p class="text">Linkedin</p>
+                                        <p class="icons-text">Linkedin</p>
                                     </a>
                                 </div>
                                 <div class="contact-us-or-line">
@@ -47,21 +50,21 @@
                                     </h5>
                                 </div>
                                 <form action="{% url 'register' %}" method="POST">
-                                    <label class="text">Username</label>
+                                    <label>Username</label>
                                     <input
                                         type="text"
                                         placeholder="Username"
                                         name="username"
                                         required
                                     >
-                                    <label class="text">Email Address</label>
+                                    <label>Email Address</label>
                                     <input
                                         type="email"
                                         placeholder="Email"
                                         name="email"
                                         required
                                     >
-                                    <label class="text">Password</label>
+                                    <label>Password</label>
                                     <input
                                         type="password"
                                         placeholder="Password"

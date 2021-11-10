@@ -7,12 +7,10 @@
 .logo {
   width: 150px;
   height: 100px;
-  margin-top: 2%;
-  margin-left: 40%;
-  margin-right: 50%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   display: flex;
-  left: -30px;
 }
 .logo img {
   width: 100px;
@@ -20,7 +18,7 @@
 }
 
 .bg {
-  background-image: url("images/bg-img.jpg");
+  background-image: url("https://i.ibb.co/vD45swT/bg-img.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,9 +27,6 @@
 
 body {
   background-color: #000000;
-}
-label {
-  font-size: 18px;
 }
 
 .contact-us-section {
@@ -67,9 +62,7 @@ label {
   align-items: center;
   border-radius: 10px;
 }
-.contact-us-form-holder h1 {
-  font-weight: 600;
-}
+
 .contact-us-form-holder form {
   width: 95%;
   height: 70%;
@@ -83,7 +76,6 @@ label {
   height: 48px;
   padding-left: 16px;
   padding-right: 16px;
-
   background: white;
   border: 0;
   outline: none;
@@ -102,7 +94,7 @@ label {
   width: 100%;
   color: rgb(5, 25, 45);
   font-style: normal;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: #05192d;
   font-weight: 500;
@@ -125,12 +117,7 @@ label {
   letter-spacing: 1px;
   margin-top: 10px;
 }
-.contact-us-form-holder h1 {
-  margin-top: 10px;
-  font-size: 1.3rem;
-  color: #000000;
-  line-height: 1.2;
-}
+
 .contact-us-accounts {
   width: 100%;
   height: 20%;
@@ -140,12 +127,6 @@ label {
   align-items: center;
 }
 
-.contact-us-accounts p {
-  font-size: 0.8rem;
-  font-weight: 500;
-  margin-left: 10px;
-  margin-top: 10px;
-}
 .contact-us-accounts img {
   width: 25px;
   height: 25px;
@@ -155,6 +136,7 @@ label {
   height: 48px;
   padding: 1.5%;
   display: flex;
+  text-decoration: none;
   align-items: center;
   justify-content: center;
   border: solid 2px #e5e1da;
@@ -169,23 +151,7 @@ label {
   height: 20px;
   position: relative;
 }
-.contact-us-or-line p {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  position: absolute;
-  width: 30px;
-  background: white;
-  text-align: center;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-}
-.contact-us-or-line hr {
-  background-color: transparent;
-  border-top: 1px solid #ccc;
-}
+
 .contact-us-footer {
   width: 100%;
   margin-top: 10px;
@@ -241,41 +207,28 @@ label {
   .image_conatiner {
     width: 100%;
   }
-  .contact-us-social-media-buttons {
-    margin: 1%;
-    width: 100%;
-  }
-  .contact-us-accounts {
-    display: block;
-  }
   .heading {
     font-size: 18px;
   }
-  .text {
-    font-size: 14px !important;
+
+  .contact-us-form-holder input {
+    font-size: 16px;
   }
-}
+  .contact-us-form-holder label {
+    font-size: 16px;
+  }
 
-.contact-us-accounts_fb_img {
-  width: 24px !important;
-  height: 22px !important;
-}
-
-.contact-us-accounts_lin_img {
-  width: 30px !important;
-  height: 30px !important;
+  .contact-us-social-media-buttons {
+    width: auto;
+    font-size: 12px;
+    padding: 0.5%;
+  }
 }
 
 .heading {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 24px;
-}
-
-.text {
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  text-decoration: none !important;
 }
 
 .divide {
@@ -298,4 +251,18 @@ input[type="email"] {
 .terms {
   font-size: 14px;
   margin-top: 1%;
+}
+
+.close-btn {
+  text-align: end;
+  font-size: 25px;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.icons-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 18px;
 }
