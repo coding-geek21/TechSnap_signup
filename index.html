@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Signup page</title>
+        <meta name="description" content="Source code generated using layoutit.com">
+        <meta name="author" content="LayoutIt!">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid bg">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="logo.png" alt="logo" class="img">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <section class="contact-us-section">
+                        <div class="contact-us-right">
+                            <div class="contact-us-form-holder">
+                                <p class="heading">Create Your Free Account</p>
+                                <div class="contact-us-accounts">
+                                    <a class="contact-us-social-media-buttons text" href="/social-auth/login/google-oauth2/?next=">
+                                        <img class="social-icons" src="google.svg" alt="socail">
+                                        <p class="text">Google</p>
+                                    </a>
+                                    <a class="contact-us-social-media-buttons text" href="/social-auth/login/facebook/?next=">
+                                        <img class="social-icons" src="facebook.svg" alt="socail">
+                                        <p class="text">Facebook</p>
+                                    </a>
+                                    <a class="contact-us-social-media-buttons text" href="/social-auth/login/linkedin-oauth2/?next=">
+                                        <img class="social-icons" src="linkedin.svg" alt="socail">
+                                        <p class="text">Linkedin</p>
+                                    </a>
+                                </div>
+                                <div class="contact-us-or-line">
+                                    <h5 class="divide">
+                                        <span>or</span>
+                                    </h5>
+                                </div>
+                                <form action="{% url 'register' %}" method="POST">
+                                    <label class="text">Username</label>
+                                    <input
+                                        type="text"
+                                        placeholder="Username"
+                                        name="username"
+                                        required
+                                    >
+                                    <label class="text">Email Address</label>
+                                    <input
+                                        type="email"
+                                        placeholder="Email"
+                                        name="email"
+                                        required
+                                    >
+                                    <label class="text">Password</label>
+                                    <input
+                                        type="password"
+                                        placeholder="Password"
+                                        name="password"
+                                        required
+                                    >
+                                    <button type="submit">Start Learning For Free</button>
+                                    <p class="terms">By continuing, you accept our Terms of Use, our Privacy Policy. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).</p>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-12">
+                    <section class="contact-us-section">
+                        <div class="contact-us-right">
+                            <div class="contact-us-form-holder">
+                                <div class="contact-us-footer">
+                                    <p>
+                                        Have Account ?
+                                        <a href="{% url 'login' %}">Login Here</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
