@@ -5,22 +5,16 @@
 }
 
 .logo {
-  width: 150px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  display: flex;
+  text-align: right;
 }
 .logo img {
-  width: 100px;
+  width: 25%;
   object-fit: contain;
 }
 
 .bg {
-  background-image: url("https://i.ibb.co/vD45swT/bg-img.jpg");
+  background-image: url("https://i.ibb.co/k0rtxNX/bg-img.jpg");
   height: 100%;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -31,7 +25,6 @@ body {
 
 .contact-us-section {
   width: 100%;
-  max-height: auto;
   margin-bottom: 2%;
   display: flex;
   align-items: center;
@@ -115,7 +108,6 @@ body {
   background-color: #fc00bd;
   font-weight: 500;
   letter-spacing: 1px;
-  margin-top: 10px;
 }
 
 .contact-us-accounts {
@@ -166,10 +158,37 @@ body {
   text-decoration: none;
   color: rgb(252, 0, 210);
 }
+
+@media (min-width: 900px) {
+  .close-text {
+    text-align: end;
+    display: block;
+  }
+  .close-btn {
+    text-align: right;
+    font-size: 40px;
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 900px) {
   .contact-us-section {
     flex-direction: column;
     height: auto;
+  }
+  .logo-img {
+    text-align: center;
+    width: 40%;
+  }
+  .close-btn {
+    text-align: right;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .close-text {
+    text-align: end;
+    display: block;
   }
   .contact-us-left h1 {
     font-size: 1.2rem;
@@ -199,11 +218,23 @@ body {
     margin-left: 5px;
   }
 }
+
 @media (max-width: 500px) {
   .contact-us-right {
     width: 95vw;
     height: auto;
   }
+
+  .logo {
+    text-align: center;
+  }
+  .logo-img {
+    width: 100%;
+  }
+  .close-btn {
+    font-size: 28px;
+  }
+
   .image_conatiner {
     width: 100%;
   }
@@ -218,10 +249,21 @@ body {
     font-size: 16px;
   }
 
-  .contact-us-social-media-buttons {
+  .terms {
+    font-size: 10px;
+  }
+  .close-text {
+    display: none;
+  }
+  /* .contact-us-social-media-buttons {
     width: auto;
     font-size: 12px;
     padding: 0.5%;
+  } */
+
+  #linkedin {
+    height: 70%;
+    width: 70%;
   }
 }
 
@@ -253,16 +295,20 @@ input[type="email"] {
   margin-top: 1%;
 }
 
-.close-btn {
-  text-align: end;
-  font-size: 25px;
-  margin: 1%;
-  cursor: pointer;
-}
-
 .icons-text {
   font-size: 16px;
   font-weight: 500;
   margin-left: 10px;
   margin-top: 18px;
+}
+
+#facebook {
+  height: 55%;
+  width: 55%;
+}
+
+#google {
+  height: 70%;
+  width: 70%;
+  margin-top: 4%;
 }
