@@ -231,11 +231,13 @@ body {
   .logo {
     text-align: center;
   }
-  .logo-img {
-    width: 100%;
+  .logo img {
+    width: 40%;
+    margin-top: 4%;
   }
   .close-btn {
-    font-size: 28px;
+    font-size: 32px;
+    margin-top: -24%;
   }
 
   .image_conatiner {
@@ -258,11 +260,6 @@ body {
   .close-text {
     display: none;
   }
-  /* .contact-us-social-media-buttons {
-    width: auto;
-    font-size: 12px;
-    padding: 0.5%;
-  } */
 
   #linkedin {
     height: 70%;
@@ -293,8 +290,12 @@ input[type="email"] {
   margin-bottom: 2%;
 }
 
+input[type="password"] {
+  margin-bottom: 4%;
+}
+
 .terms {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 1%;
 }
 
