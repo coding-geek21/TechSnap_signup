@@ -127,16 +127,16 @@ body {
   height: 25px;
 }
 .contact-us-social-media-buttons {
-  width: auto;
+  width: 30%;
   height: 48px;
   padding: 1.5%;
   display: flex;
-  text-decoration: none;
+  text-align: center;
+  text-decoration: none !important;
   align-items: center;
   justify-content: center;
   border: solid 2px #e5e1da;
   border-radius: 5px;
-  text-decoration: none;
   color: #000;
 }
 
@@ -165,11 +165,12 @@ body {
 @media (min-width: 900px) {
   .close-text {
     text-align: end;
+    margin-top: -8%;
     display: block;
   }
   .close-btn {
     text-align: right;
-    font-size: 40px;
+    font-size: 70px;
     cursor: pointer;
   }
 }
@@ -185,12 +186,13 @@ body {
   }
   .close-btn {
     text-align: right;
-    font-size: 40px;
+    font-size: 70px;
     cursor: pointer;
   }
 
   .close-text {
     text-align: end;
+    margin-top: -24%;
     display: block;
   }
   .contact-us-left h1 {
@@ -297,7 +299,7 @@ input[type="password"] {
 
 .terms {
   font-size: 12px;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 .icons-text {
@@ -309,11 +311,10 @@ input[type="password"] {
 
 #facebook {
   height: 55%;
-  width: 55%;
+  width: 20%;
 }
 
 #google {
   height: 70%;
-  width: 70%;
   margin-top: 4%;
 }
