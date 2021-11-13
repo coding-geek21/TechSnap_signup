@@ -13,6 +13,18 @@
   object-fit: contain;
 }
 
+.close-img {
+  text-align: right;
+}
+
+.close-img img {
+  width: 8%;
+  margin: 2%;
+}
+.close-text {
+  margin-right: 2%;
+}
+
 .bg {
   background-image: url("https://i.ibb.co/vD45swT/bg-img.jpg");
   height: 100%;
@@ -162,23 +174,14 @@ body {
   color: rgb(252, 0, 210);
 }
 
-@media (min-width: 900px) {
-  .close-text {
-    text-align: end;
-    margin-top: -8%;
-    display: block;
-  }
-  .close-btn {
-    text-align: right;
-    font-size: 70px;
-    cursor: pointer;
-  }
-}
-
 @media (max-width: 900px) {
   .contact-us-section {
     flex-direction: column;
     height: auto;
+  }
+
+  .logo {
+    text-align: center;
   }
   .logo-img {
     text-align: center;
@@ -190,23 +193,6 @@ body {
     cursor: pointer;
   }
 
-  .close-text {
-    text-align: end;
-    margin-top: -24%;
-    display: block;
-  }
-  .contact-us-left h1 {
-    font-size: 1.2rem;
-    height: 10%;
-    text-align: center;
-  }
-  .contact-us-left p {
-    display: none;
-  }
-  .contact-us-left {
-    width: 80%;
-    height: 5%;
-  }
   .contact-us-right {
     width: 450px;
     height: 75%;
@@ -214,10 +200,6 @@ body {
   .contact-us-form-holder {
     max-width: 95%;
     min-width: 95%;
-  }
-  .contact-us-accounts img {
-    width: 20px;
-    height: 20px;
   }
   .contact-us-accounts p {
     margin-left: 5px;
@@ -238,9 +220,8 @@ body {
     width: 40%;
     margin-top: 8%;
   }
-  .close-btn {
-    font-size: 40px;
-    margin-top: -26%;
+  .close-img {
+    margin-top: -22%;
   }
 
   .image_conatiner {
